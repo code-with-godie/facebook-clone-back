@@ -1,4 +1,4 @@
-import Messages from '../models/message.js';
+import Messages from '../models/Message.js';
 import { StatusCodes } from 'http-status-codes';
 import NotFoundError from '../../../errors/not-found.js';
 import BadRequestError from '../../../errors/bad-request.js';
