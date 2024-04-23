@@ -4,7 +4,6 @@ import NotFoundError from '../../../errors/not-found.js';
 import BadRequestError from '../../../errors/bad-request.js';
 import UnauthenticatedError from '../../../errors/unauthenticated.js';
 import { uploadFile } from '../../../middlewares/uploadToCloudinary.js';
-import message from '../models/message.js';
 
 export const createAccount = async (req, res, next) => {
   try {

@@ -13,7 +13,7 @@ import handleUpload from '../../../middlewares/uploadToCloudinary.js';
 
 const Router = express.Router();
 
-Router.route('/').post(authorize, createPost);
+Router.route('/').post(authorize, handleUpload, createPost);
 Router.route('/').get(authorize, getAllPosts);
 Router.route('/watch/:slug').get(authorize, getVideos);
 Router.route('/like/:id').patch(authorize, toggleLikes);
