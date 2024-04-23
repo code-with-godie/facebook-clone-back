@@ -24,7 +24,9 @@ app.use(express.json({ limit: 1000000000 }));
 
 //api  routes
 app.get('/', (req, res) => {
-  res.status(200).json({ success: true, message: 'facebook-clone app!!!' });
+  return res
+    .status(200)
+    .json({ success: true, message: 'facebook-clone app!!!' });
 });
 app.use('/api/v1/facebook-clone/users', usersRoutes);
 app.use('/api/v1/facebook-clone/posts', postRoutes);
