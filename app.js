@@ -42,7 +42,7 @@ app.use(notFound);
 
 //error handlermindleware
 app.use(errorHandlerMiddleware);
-const port = 5000 || process.env.PORT;
+const port = process.env.PORT || 5000;
 const start = async () => {
   await connectDB(process.env.MONGO_URL);
   app.listen(port, () => console.log(`server is listening at port ${port}...`));
