@@ -12,7 +12,6 @@ import messageRoutes from './api/v1/routes/messageRoutes.js';
 import roomRoutes from './api/v1/routes/roomRoutes.js';
 import commentRoutes from './api/v1/routes/commentRoutes.js';
 import storiesRoute from './api/v1/routes/storiesRoute.js';
-import './socket/server.js';
 //app config
 const app = express();
 dotenv.config();
